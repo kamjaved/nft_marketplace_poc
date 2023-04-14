@@ -81,7 +81,8 @@ const MyPurchases = ({ account }) => {
 									<Card.Img variant="top" src={item.image} />
 									<Card.Body>
 										<strong>
-											{ethers.utils.formatEther(item.totalPrice)} EYT{' '}
+											🪙 {ethers.utils.formatEther(item.totalPrice)}{' '}
+											EYT{' '}
 										</strong>
 									</Card.Body>
 									<Card.Footer className="text-white d-flex justify-content-between">

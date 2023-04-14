@@ -16,10 +16,12 @@ const OwnerHistoryModel = ({ show, handleClose, ownerHistoryData }) => {
 				<Modal.Body>
 					{ownerHistoryData.map((item) => (
 						<p>
-							<strong>Owner:</strong>
+							◾ <strong>Owner:</strong>
 							{item.owner}
 							{'---->'}
-							<span>{item.userAction === 'List' ? 'List' : 'Buy'}</span>
+							<span>
+								{item.userAction === 'List' ? '🟢 List' : '🔴 Buy'}
+							</span>
 						</p>
 					))}
 				</Modal.Body>

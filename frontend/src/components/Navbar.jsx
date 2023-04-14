@@ -39,7 +39,9 @@ const Navigation = ({ web3Handler, account }) => {
 		<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
 			<Container>
 				<Navbar.Brand>
-					<img src={logo} alt="logo" className="logo_brand" />
+					<Nav.Link as={Link} to="/">
+						<img src={logo} alt="logo" className="logo_brand" />
+					</Nav.Link>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse
@@ -47,16 +49,16 @@ const Navigation = ({ web3Handler, account }) => {
 					className="justify-content-between">
 					<Nav id="me-auto" color="white">
 						<Nav.Link as={Link} to="/">
-							Home
+							🏠 Home
 						</Nav.Link>
 						<Nav.Link as={Link} to="/create">
-							Create NFT
+							➕ Create NFT
 						</Nav.Link>
 						<Nav.Link as={Link} to="/my-listed-items">
-							My NFTs
+							❤️ My NFTs
 						</Nav.Link>
 						<Nav.Link as={Link} to="/my-purchases">
-							My Owned NFTs
+							💟 My Owned NFTs
 						</Nav.Link>
 					</Nav>
 
@@ -76,8 +78,10 @@ const Navigation = ({ web3Handler, account }) => {
 
 								<Nav.Link onClick={handleShow}>
 									<img src={coin} alt="coin" className="coin_icon" />
+
 									<span className="text-bold">
-										{balance} {symbol}
+										{' '}
+										{balance} <strong>{symbol}</strong>
 									</span>
 								</Nav.Link>
 

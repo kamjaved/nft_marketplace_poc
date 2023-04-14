@@ -75,7 +75,7 @@ const Home = ({ account }) => {
 										<Card.Text className="text-dark">
 											<h5>
 												<strong>
-													Price:{' '}
+													🪙 Price:{' '}
 													{ethers.utils.formatEther(
 														item.totalPrice
 													)}{' '}
@@ -95,7 +95,7 @@ const Home = ({ account }) => {
 													onClick={() =>
 														alert('You Cant Buy Your Own NFT')
 													}>
-													Your Listed NFT
+													❤️ Your Listed NFT
 												</Button>
 											) : (
 												<Button
@@ -103,7 +103,7 @@ const Home = ({ account }) => {
 													variant="danger"
 													size="lg"
 													disabled={click[idx] ? true : false}>
-													Buy
+													Buy 🛒
 												</Button>
 											)}
 										</div>

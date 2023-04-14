@@ -102,7 +102,7 @@ const Create = ({ account }) => {
 
 							<div className="d-grid px-0">
 								<Button onClick={createNFT} variant="dark" size="lg">
-									Create & List NFT!
+									Create & List NFT! 💟
 								</Button>
 							</div>
 						</Row>

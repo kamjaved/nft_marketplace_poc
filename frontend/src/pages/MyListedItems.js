@@ -16,9 +16,10 @@ function renderSoldItems(items) {
 							<Card.Footer className="text-white">
 								<strong>
 									{' '}
-									Recieved {ethers.utils.formatEther(
+									🪙 Recieved {ethers.utils.formatEther(
 										item.price
-									)} EYT{' '}
+									)}{' '}
+									EYT{' '}
 								</strong>
 							</Card.Footer>
 						</Card>
@@ -72,6 +73,7 @@ export default function MyListedItems({ account }) {
 									<Card.Footer className="text-white">
 										<strong>
 											{' '}
+											🪙
 											{ethers.utils.formatEther(
 												item.totalPrice
 											)} EYT{' '}
