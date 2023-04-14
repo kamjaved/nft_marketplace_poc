@@ -33,17 +33,18 @@ const Navigation = ({ web3Handler, account }) => {
 
 	useEffect(() => {
 		getTokenDetail();
-	}, []);
+	});
 
 	return (
-		<Navbar expand="lg" bg="dark" variant="dark">
+		<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
 			<Container>
 				<Navbar.Brand>
 					<img src={logo} alt="logo" className="logo_brand" />
 				</Navbar.Brand>
-
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
-				<Navbar.Collapse id="responsive-navbar-nav">
+				<Navbar.Collapse
+					id="responsive-navbar-nav"
+					className="justify-content-between">
 					<Nav id="me-auto" color="white">
 						<Nav.Link as={Link} to="/">
 							Home
@@ -58,6 +59,7 @@ const Navigation = ({ web3Handler, account }) => {
 							My Owned NFTs
 						</Nav.Link>
 					</Nav>
+
 					<Nav>
 						{account ? (
 							<>

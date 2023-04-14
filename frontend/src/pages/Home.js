@@ -87,7 +87,7 @@ const Home = ({ account }) => {
 
 									<Card.Footer>
 										<div className="d-grid">
-											{item.seller.toUpperCase() ==
+											{item.seller.toUpperCase() ===
 											account.toUpperCase() ? (
 												<Button
 													variant="info"

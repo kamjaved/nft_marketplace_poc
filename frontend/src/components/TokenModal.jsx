@@ -15,7 +15,7 @@ const TokenModal = ({ show, handleClose, account }) => {
 			'http://localhost:3001/api/token/get-token-amount',
 			{ amount: amount, account: account }
 		);
-		alert(result.data.data);
+		alert(result.data.msg);
 		window.location.reload();
 	};
 	return (
